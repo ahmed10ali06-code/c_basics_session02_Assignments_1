@@ -1,5 +1,6 @@
 ﻿using System.Drawing;
 using System.Runtime.Intrinsics.X86;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace c_basics_session02_Assignments_1
 {
@@ -73,20 +74,29 @@ namespace c_basics_session02_Assignments_1
 
             #region Q8
             //Q08.Given string yearText = "2023";, convert it using int.Parse().Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            string yearText = "2023";
-            int year = int.Parse(yearText);
-            string badText = "abc";
+            //string yearText = "2023";
+            //int year = int.Parse(yearText);
+            //string badText = "abc";
 
-            Console.WriteLine(year);
-            bool trynumber = int.TryParse(badText, out int number);
-            if (!trynumber)
-            {
-                Console.WriteLine("Invalid number");
-            }
-            else
-            {
-                Console.WriteLine(number);
-            }
+            //Console.WriteLine(year);
+            //bool trynumber = int.TryParse(badText, out int number);
+            //if (!trynumber)
+            //{
+            //    Console.WriteLine("Invalid number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(number);
+            //}
+
+            #endregion
+
+            #region Q9
+            //Q09.Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string.
+            int pages = 464;
+            Console.WriteLine(pages.ToString().GetType());
+            string pagesText = pages.ToString();
+            Console.WriteLine(pagesText.GetType());
 
             #endregion
         }

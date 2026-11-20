@@ -46,9 +46,17 @@
 
             #region Q5
             //Q05.Declare an int pages = 300; then store it in a double variable without using a cast.
-            int pages = 300;
-            double DPages = pages;
-            Console.WriteLine(DPages);
+            //int pages = 300;
+            //double DPages = pages;
+            //Console.WriteLine(DPages);
+
+            #endregion
+
+            #region Q6
+            //Q06.Declare a double price = 49.99; then convert it into an int using a cast.
+            double Dprice = 49.99;
+            int price = (int)Dprice;
+            Console.WriteLine(price);
 
             #endregion
         }

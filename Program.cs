@@ -54,11 +54,19 @@
 
             #region Q6
             //Q06.Declare a double price = 49.99; then convert it into an int using a cast.
-            double Dprice = 49.99;
-            int price = (int)Dprice;
-            Console.WriteLine(price);
+            //double Dprice = 49.99;
+            //int price = (int)Dprice;
+            //Console.WriteLine(price);
 
             #endregion
+
+            #region Q7
+            //Q07.Given string pagesText = "464";, convert it into an int using the Convert class.
+            string pagesText = "464";
+            int pages = Convert.ToInt32(pagesText);
+            Console.WriteLine(pages);
+            Console.WriteLine(Convert.ToInt32(pagesText));
+            #endregion
         }
-    }
+}
 }
